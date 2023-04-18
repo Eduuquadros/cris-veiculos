@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.image-gallery-image {
+    max-height: 460px !important;
+}
+
+.image-gallery-thumbnail-image {
+    max-height: 69px !important;
+}
