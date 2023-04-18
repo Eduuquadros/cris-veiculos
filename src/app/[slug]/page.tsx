@@ -8,7 +8,7 @@ export default async function Page({
 }: {
   params: { slug: string };
 }) {
-  const response = await fetch(`${process.env.VERCEL_URL}/api/cars/${slug}`, {
+  const response = await fetch(`${process.env.API_URL}/api/cars/${slug}`, {
     cache: "no-store",
   });
 
