@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function Page() {
-  const response = await fetch(`${process.env.VERCEL_URL}/api/cars`, {
+  const response = await fetch(`${process.env.API_URL}/api/cars`, {
     cache: "no-store",
   });
 
