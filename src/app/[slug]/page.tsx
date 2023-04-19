@@ -16,15 +16,15 @@ export default async function Page({
 
   return (
     <main className="mt-5 mb-24">
-      <div className="flex items-center justify-between">
-        <p className="text-white text-3xl border-l-4 pl-2 mb-4 border-[#45aede]">
+      <div className="flex items-center justify-between mb-4">
+        <p className="text-white text-3xl border-l-4 pl-2 border-[#45aede]">
           {car.titulo}
         </p>
         <Link
           href="/"
-          className="text-white text-lg flex items-center cursor-pointer"
+          className="text-white text-md flex items-center cursor-pointer"
         >
-          <ArrowLeftCircle className="mr-2" />
+          <ArrowLeftCircle className="mr-2" size={20} />
           Voltar
         </Link>
       </div>

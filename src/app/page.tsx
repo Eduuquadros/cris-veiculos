@@ -23,7 +23,7 @@ export default async function Page() {
                 <Image
                   src={car.fotos.fotos[0].url}
                   alt={car.titulo!}
-                  width={345}
+                  width={385}
                   height={232}
                   placeholder="empty"
                 />
