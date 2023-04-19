@@ -21,7 +21,7 @@ export default async function Page() {
             <Link href={`/${car.url}`}>
               <div className="rounded border-4 lg:max-h-[210px] overflow-hidden flex items-center justify-center">
                 <Image
-                  src={car.fotos.fotos[0].url}
+                  src={car.fotos.fotos[0]?.url}
                   alt={car.titulo!}
                   width={385}
                   height={232}
