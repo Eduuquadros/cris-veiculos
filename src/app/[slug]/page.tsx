@@ -1,5 +1,5 @@
 import { ICar } from "../dto/ICars";
-import { Car, Settings } from "lucide-react";
+import { Car, Settings, ArrowLeftCircle } from "lucide-react";
 import { Gallery } from "../components/Images";
 import Link from "next/link";
 
@@ -15,10 +15,19 @@ export default async function Page({
   const car = (await response.json()).carro as ICar;
 
   return (
-    <main className="mt-5 mb-10">
-      <p className="text-white text-3xl border-l-4 pl-2 mb-4 border-[#45aede]">
-        {car.titulo}
-      </p>
+    <main className="mt-5 mb-24">
+      <div className="flex items-center justify-between">
+        <p className="text-white text-3xl border-l-4 pl-2 mb-4 border-[#45aede]">
+          {car.titulo}
+        </p>
+        <Link
+          href="/"
+          className="text-white text-lg flex items-center cursor-pointer"
+        >
+          <ArrowLeftCircle className="mr-2" />
+          Voltar
+        </Link>
+      </div>
       <div className="sm:flex flex-col lg:grid grid-cols-3 mt-8">
         <div className="bg-[#21252c] flex flex-col justify-between shadow-2xl px-6 py-6 sm:order-2 lg:order-1">
           <div>
@@ -42,7 +51,7 @@ export default async function Page({
             href={`https://api.whatsapp.com/send?phone=5551992711960&text=Olá Cris%0atenho interesse no ${car.titulo} ${car.ano} que vi no site %0apodemos conversar?`}
             target="_blank"
           >
-            <button className="w-full rounded-full bg-[#45aede] text-white px-8 py-2 font-semibold text-LG hover:opacity-70">
+            <button className="mt-10 w-full rounded-full bg-[#45aede] text-white px-8 py-2 font-semibold text-LG hover:opacity-70">
               ENTRAR EM CONTATO
             </button>
           </a>

@@ -12,8 +12,10 @@ function Gallery({ images = [] }: { images: IImages[] }) {
       items={images.map(({ url }) => ({
         original: url,
         thumbnail: url,
+        loading: "lazy",
       }))}
       showPlayButton={false}
+      lazyLoad
     />
   );
 }
