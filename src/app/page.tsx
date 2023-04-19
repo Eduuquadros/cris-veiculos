@@ -10,7 +10,7 @@ export default async function Page() {
   const cars = ((await response.json()) as ICarsResponse).carros;
 
   return (
-    <main className="mt-5">
+    <main className="mt-5 mb-10">
       <p className="text-white text-2xl border-l-4 pl-2 border-[#45aede]">
         NOSSO ESTOQUE
       </p>
