@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     "Seminovos em alvorada",
     "Cris Semi novos",
   ],
-  robots: "noindex, nofollow",
 };
 
 export default function RootLayout({
