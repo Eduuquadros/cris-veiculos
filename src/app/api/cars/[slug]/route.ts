@@ -3,7 +3,7 @@ import client from "../../../../config/apollo-client";
 import { gql } from "@apollo/client";
 
 export async function GET(
-  request: NextRequest,
+  req: NextRequest,
   context: { params: { slug: string } }
 ) {
   const { data } = await client.query({
