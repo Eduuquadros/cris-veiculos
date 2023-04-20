@@ -2,6 +2,8 @@ import { ICarsResponse } from "./dto/ICars";
 import Image from "next/image";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export default async function Page() {
   const response = await fetch(`${process.env.API_URL}/api/cars`, {
     cache: "no-store",

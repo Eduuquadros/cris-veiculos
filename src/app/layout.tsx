@@ -1,11 +1,23 @@
+import { Metadata } from "next";
 import Header from "./components/Header";
 import Whatsapp from "./components/Whatsapp";
 import "./globals.css";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Cris Veiculos",
   description:
     "Bem vindo(a), confira todos os carros que temos em nossa loja, Nos visite e faça sua oferta.",
+  keywords: [
+    "Venda de carros",
+    "Venda de carros em porto alegre",
+    "Venda de carros em alvorada",
+    "Financiamento de carros",
+    "Carros seminovos",
+    "Seminovos",
+    "Seminovos em alvorada",
+    "Cris Semi novos",
+  ],
+  robots: "noindex, nofollow",
 };
 
 export default function RootLayout({
