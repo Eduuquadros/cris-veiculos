@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "Seminovos em alvorada",
     "Cris Semi novos",
   ],
+  applicationName: "Cris Veiculos",
+  robots: "index, follow",
+  publisher: "Vercel",
 };
 
 export default function RootLayout({
