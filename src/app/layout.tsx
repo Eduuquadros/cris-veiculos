@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Cris Semi novos",
   ],
   applicationName: "Cris Veiculos",
-  robots: "index, follow",
+  robots: "index",
   publisher: "Vercel",
 };
 
