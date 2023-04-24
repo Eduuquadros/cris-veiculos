@@ -4,6 +4,7 @@ export default function Whatsapp() {
       <a
         href="https://api.whatsapp.com/send?phone=5551992711960&text=Olá Cris!"
         target="_blank"
+        aria-label="Entre em contato!"
       >
         <svg
           stroke="white"
