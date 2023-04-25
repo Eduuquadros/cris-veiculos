@@ -4,7 +4,7 @@ import Whatsapp from "./components/Whatsapp";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Cris Quadros Veiculos | Alvorada RS",
+  title: "Cris Quadros Veiculos",
   description:
     "Bem vindos, Venda de carros / veiculos e motos seminovos em alvorada. Trabalho com venda, compra, troca e financiamento de seminovos em alvorada desde 2018, confira nosso estoque.",
   keywords: [
