@@ -11,3 +11,7 @@
 .image-gallery-thumbnail-image {
     max-height: 69px !important;
 }
+
+.image-gallery-thumbnail.active {
+    border: 3px solid #3B3F46 !important
+}

@@ -13,12 +13,12 @@ export default async function Page() {
 
   return (
     <main className="mt-5 mb-10">
-      <p className="text-white text-2xl border-l-4 pl-2 border-[#45aede]">
+      <p className="text-white text-2xl border-l-4 pl-2 border-[#3B3F46]">
         NOSSO ESTOQUE
       </p>
 
       <div className="mt-8 lg:grid grid-cols-3 gap-6 cursor-pointer">
-        {cars.map((car) => (
+        {cars.reverse().map((car) => (
           <div key={car.id} className="sm:mb-8 lg:mb-0">
             <Link href={`/${car.url}`}>
               <div className="rounded border-4 lg:max-h-[210px] overflow-hidden flex items-center justify-center">

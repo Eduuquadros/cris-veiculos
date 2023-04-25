@@ -4,9 +4,9 @@ import Whatsapp from "./components/Whatsapp";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Cris Veiculos",
+  title: "Cris Quadros Veiculos",
   description:
-    "Bem vindo(a), confira todos os carros que temos em nossa loja, Nos visite e faça sua oferta.",
+    "Trabalho com venda, compra, troca e financiamento de semi novos em alvorada desde 2018, confira nosso estoque.",
   keywords: [
     "Venda de carros",
     "Venda de carros em porto alegre",
@@ -15,11 +15,12 @@ export const metadata: Metadata = {
     "Carros seminovos",
     "Seminovos",
     "Seminovos em alvorada",
-    "Cris Semi novos",
+    "Cris Quadros Semi novos",
   ],
-  applicationName: "Cris Veiculos",
+  applicationName: "Cris Quadros Veiculos",
   robots: "index",
   publisher: "Vercel",
+  icons: "https://www.crisquadrosveiculos.com.br/favicon.ico",
 };
 
 export default function RootLayout({

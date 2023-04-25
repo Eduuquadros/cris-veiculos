@@ -19,7 +19,7 @@ export default async function Page({
   return (
     <main className="mt-5 mb-24">
       <div className="flex items-center justify-between mb-4">
-        <p className="text-white text-3xl border-l-4 pl-2 border-[#45aede]">
+        <p className="text-white text-3xl border-l-4 pl-2 border-[#3B3F46]">
           {car.titulo}
         </p>
         <Link
@@ -35,7 +35,7 @@ export default async function Page({
           <div>
             <p className="text-white text-4xl mb-6">{car.preco}</p>
             <p className="font-bold text-white mb-4 flex items-center">
-              <Settings className="mr-2" color="#45aede" />
+              <Settings className="mr-2" color="white" />
               Detalhes
             </p>
             <p className="text-white mb-1 text-lg">
@@ -43,7 +43,7 @@ export default async function Page({
             </p>
             <p className="text-white mb-1 text-lg">{car.kilometragem}</p>
             <p className="font-bold text-white mb-4 mt-10 flex items-center">
-              <Car className="mr-2" color="#45aede" />
+              <Car className="mr-2" color="white" />
               Acessórios
             </p>
             <p className="whitespace-pre-line text-white">{car.acessorios}</p>
@@ -53,12 +53,12 @@ export default async function Page({
             href={`https://api.whatsapp.com/send?phone=5551992711960&text=Olá Cris%0atenho interesse no ${car.titulo} ${car.ano} que vi no site %0apodemos conversar?`}
             target="_blank"
           >
-            <button className="mt-10 w-full rounded-full bg-[#45aede] text-white px-8 py-2 font-semibold text-LG hover:opacity-70">
+            <button className="mt-10 w-full rounded-full bg-[#25d366] text-white px-8 py-2 text-LG hover:opacity-70">
               ENTRAR EM CONTATO
             </button>
           </a>
         </div>
-        <div className="col-span-2 text-sm sm:order-1 lg:order-2 sm:mb-10 md:mb-0">
+        <div className="col-span-2 text-sm sm:order-1 lg:order-2 sm:mb-0 md:mb-0">
           <Gallery images={car.fotos.fotos} />
         </div>
       </div>
