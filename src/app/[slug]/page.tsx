@@ -1,5 +1,5 @@
 import { ICar } from "../dto/ICars";
-import { Car, Settings, ArrowLeftCircle } from "lucide-react";
+import { Car, Settings, ArrowLeftCircle, Activity } from "lucide-react";
 import { Gallery } from "../components/Images";
 import Link from "next/link";
 
@@ -33,8 +33,14 @@ export default async function Page({
       <div className="sm:flex flex-col lg:grid grid-cols-3 mt-8">
         <div className="bg-[#21252c] flex flex-col justify-between shadow-2xl px-6 py-6 sm:order-2 lg:order-1">
           <div>
-            <p className="text-white text-4xl mb-6">{car.preco}</p>
-            <p className="font-bold text-white mb-4 flex items-center">
+            <p
+              className={`text-white text-4xl mb-6 ${
+                car.carroStatus === ("Vendido" || "VENDIDO") && "line-through"
+              }`}
+            >
+              {car.preco}
+            </p>
+            <p className="font-bold text-white mb-2 flex items-center">
               <Settings className="mr-2" color="white" />
               Detalhes
             </p>
@@ -42,7 +48,14 @@ export default async function Page({
               Ano: <strong>{car.ano}</strong>
             </p>
             <p className="text-white mb-1 text-lg">{car.kilometragem}</p>
-            <p className="font-bold text-white mb-4 mt-10 flex items-center">
+            <p className="font-bold text-white mb-4 mt-6 flex items-center">
+              <Activity className="mr-2" color="white" />
+              Status
+            </p>
+            <p className="whitespace-pre-line text-white">
+              {car.carroStatus || "Disponível"}
+            </p>
+            <p className="font-bold text-white mb-2 mt-6 flex items-center">
               <Car className="mr-2" color="white" />
               Acessórios
             </p>

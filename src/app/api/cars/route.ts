@@ -19,6 +19,7 @@ export async function GET() {
           publishedAt
           titulo
           updatedAt
+          carroStatus
           fotos {
             ... on Fotos {
               id

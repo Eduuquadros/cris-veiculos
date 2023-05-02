@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Logo from "./logo.png";
-import { CheckCheck } from "lucide-react";
 import Link from "next/link";
 
 export default function Header() {
@@ -16,11 +15,13 @@ export default function Header() {
           />
         </Link>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex flex-col justify-center">
         <p className="text-white sm:text-sm lg:text-3xl sm:mr-4">
           Compra e Venda de Semi-Novos
         </p>
-        {/* <CheckCheck className="sm:hidden lg:flex" color="#2F4858" size={48} /> */}
+        <p className="text-white text-xs">
+          Financiamento em 48x, cartão em 21x
+        </p>
       </div>
     </header>
   );
