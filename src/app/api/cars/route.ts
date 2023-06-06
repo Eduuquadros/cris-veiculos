@@ -8,7 +8,7 @@ export async function GET() {
   const { data } = await client.query({
     query: gql`
       query Carros {
-        carros {
+        carros(last: 50) {
           url
           acessorios
           ano
