@@ -4,7 +4,7 @@ import logoNeo from "../Header/logoNeo.png";
 
 export default function Footer() {
   return (
-    <div id="ondeEstamos" className="mb-10 mt-24">
+    <div className="mb-10 mt-24">
       <hr />
       <div className="my-10">
         <div className="text-white text-center text-2xl my-6">Neo Protege</div>
@@ -20,7 +20,9 @@ export default function Footer() {
         </div>
       </div>
       <hr />
-      <div className="text-white text-center text-2xl my-10">Onde estamos</div>
+      <div id="ondeEstamos" className="text-white text-center text-2xl my-10">
+        Onde estamos
+      </div>
       <div className="flex flex-col lg:flex-row mb-20">
         <Image src={Fachada} height={350} alt="Cris Veiculos" />
         <iframe
