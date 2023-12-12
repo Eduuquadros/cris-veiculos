@@ -72,7 +72,7 @@ export default async function Page({
           </a>
         </div>
         <div className="col-span-2 text-sm sm:order-1 lg:order-2 sm:mb-0 md:mb-0">
-          <Gallery images={car.fotos.fotos} />
+          <Gallery images={car?.fotos?.fotos} />
         </div>
       </div>
     </main>
