@@ -7,6 +7,7 @@ export interface ICar {
   kilometragem?: string;
   url?: string;
   carroStatus?: string;
+  oportunidade?: string;
   fotos: {
     fotos: {
       url: string;

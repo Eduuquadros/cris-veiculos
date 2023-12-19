@@ -13,6 +13,7 @@ export async function GET(
       query MyQuery($where: CarroWhereUniqueInput!) {
         carro(where: $where) {
           acessorios
+          oportunidade
           ano
           fotos {
             ... on Fotos {

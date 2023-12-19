@@ -1,5 +1,11 @@
 import { ICar } from "../dto/ICars";
-import { Car, Settings, ArrowLeftCircle, Activity } from "lucide-react";
+import {
+  Car,
+  Settings,
+  ArrowLeftCircle,
+  Activity,
+  DollarSign,
+} from "lucide-react";
 import { Gallery } from "../components/Images";
 import Link from "next/link";
 
@@ -60,6 +66,19 @@ export default async function Page({
               Acessórios
             </p>
             <p className="whitespace-pre-line text-white">{car.acessorios}</p>
+            <>
+              {car.oportunidade && (
+                <>
+                  <p className="font-bold text-white mb-2 mt-6 flex items-center">
+                    <DollarSign className="mr-2" color="white" />
+                    Oportunidade
+                  </p>
+                  <p className="whitespace-pre-line text-white">
+                    {car.oportunidade}
+                  </p>
+                </>
+              )}
+            </>
           </div>
 
           <a
