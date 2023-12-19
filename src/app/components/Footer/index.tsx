@@ -7,7 +7,9 @@ export default function Footer() {
     <div className="mb-10 mt-24">
       <hr />
       <div className="my-10">
-        <div className="text-white text-center text-2xl my-6">Neo Protege</div>
+        <div className="text-white text-center text-2xl my-6" id="neoProtege">
+          Neo Protege
+        </div>
         <p className="text-white text-center">
           Temos parceria com a neo protege, a proteção mais completa do mercado,
           valor que cabe exatamente em seu orçamento. Sem análise de perfil,

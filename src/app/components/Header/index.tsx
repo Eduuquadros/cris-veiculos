@@ -51,7 +51,9 @@ export default function Header() {
           </div>
         </div>
         <div className="flex items-center text-white">
-          <p className="mr-2 font-semibold">Parceria com</p>
+          <a href="#neoProtege" className="mr-2 font-semibold">
+            Parceria com
+          </a>
           <a href="https://neoprotege.com.br/" target="_blank">
             <Image
               src={LogoNeo}
