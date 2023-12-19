@@ -2,7 +2,7 @@ import Image from "next/image";
 import Logo from "./logo.png";
 import LogoNeo from "./logoNeo.png";
 import Link from "next/link";
-import { MapIcon } from "lucide-react";
+import { MapIcon, Instagram } from "lucide-react";
 
 export default function Header() {
   return (
@@ -29,14 +29,26 @@ export default function Header() {
       </header>
 
       <div className="flex lg:items-center flex-col lg:flex-row text-sm justify-between relative my-2">
-        <div className="text-white flex items-center text-lg mb-6 lg:mb-0">
-          <MapIcon />
-          <a
-            href="#ondeEstamos"
-            className="mr-3 cursor-pointer underline  pl-3"
-          >
-            Onde Estamos
-          </a>
+        <div className="flex">
+          <div className="text-white flex items-center text-lg mb-6 lg:mb-0">
+            <MapIcon />
+            <a
+              href="#ondeEstamos"
+              className="mr-4 cursor-pointer underline  pl-3"
+            >
+              Onde Estamos
+            </a>
+          </div>
+          <div className="text-white flex items-center text-lg mb-6 lg:mb-0">
+            <Instagram />
+            <a
+              href="https://www.instagram.com/crisquadrosveiculos/"
+              target="_blank"
+              className="mr-4 cursor-pointer underline  pl-3"
+            >
+              Instagram
+            </a>
+          </div>
         </div>
         <div className="flex items-center text-white">
           <p className="mr-2 font-semibold">Parceria com</p>
