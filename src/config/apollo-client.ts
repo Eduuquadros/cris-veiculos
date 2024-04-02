@@ -7,7 +7,7 @@ import {
 import { setContext } from "@apollo/client/link/context";
 
 const httpLink = createHttpLink({
-  uri: "https://api-sa-east-1.hygraph.com/v2/clgkgxive34uq01t28bc66f74/master",
+  uri: "https://api-sa-east-1.hygraph.com/v2/clufuwm3m1ssd07wehrhl31pn/master",
 });
 
 const defaultOptions: DefaultOptions = {

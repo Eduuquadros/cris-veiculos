@@ -21,7 +21,7 @@ export async function GET() {
           updatedAt
           carroStatus
           fotos {
-            ... on Fotos {
+            ... on Foto {
               id
               stage
               fotos {

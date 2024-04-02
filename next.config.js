@@ -11,6 +11,11 @@ const nextConfig = {
         hostname: "media.graphassets.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "sa-east-1.graphassets.com",
+        port: "",
+      },
     ],
   },
   async headers() {

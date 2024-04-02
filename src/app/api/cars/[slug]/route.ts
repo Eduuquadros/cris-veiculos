@@ -16,8 +16,9 @@ export async function GET(
           oportunidade
           ano
           fotos {
-            ... on Fotos {
+            ... on Foto {
               id
+              stage
               fotos {
                 url
               }
