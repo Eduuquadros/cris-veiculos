@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#1d1d29]">
-        <div className="sm:px-4 lg:px-6 mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px]">
+        <div className="sm:px-4 lg:px-6 mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1200px] xl:max-w-[126 0px] 2xl:max-w-[1320px]">
           <Header />
           {children}
           <Footer />

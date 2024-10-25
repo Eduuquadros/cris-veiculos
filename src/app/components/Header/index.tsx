@@ -6,7 +6,7 @@ import { MapIcon, Instagram } from "lucide-react";
 
 export default function Header() {
   return (
-    <div className="mb-16">
+    <div className="mb-12">
       <header className="flex items-center  py-2 mt-2">
         <div className="sm:mr-2 lg:mr-4">
           <Link href={`/`}>
@@ -23,7 +23,21 @@ export default function Header() {
             Compra e Venda de Semi-Novos
           </p>
           <p className="text-white text-xs">
-            Financiamento em 48x, cartão em 21x
+            <a
+              className="underline"
+              href="https://api.whatsapp.com/send?phone=5551992711960&text=Olá Cris!, gostaria de falar sobre financiamento"
+              target="_blank"
+            >
+              Financiamento
+            </a>{" "}
+            em 48x, cartão em 21x /{" "}
+            <a
+              className="underline"
+              href="https://api.whatsapp.com/send?phone=5551992711960&text=Olá Cris!, gostaria de falar sobre refinanciamento"
+              target="_blank"
+            >
+              Refinanciamento
+            </a>
           </p>
         </div>
       </header>

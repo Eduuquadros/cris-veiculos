@@ -1,10 +1,22 @@
 import Image from "next/image";
 import Fachada from "./fachada.jpg";
 import logoNeo from "../Header/logoNeo.png";
+import refinanciamento from "./refinanciamento.jpeg";
 
 export default function Footer() {
   return (
     <div className="mb-10 mt-24">
+      <hr />
+      <div className="my-10">
+        <div className="text-white text-center text-2xl my-6" id="neoProtege">
+          Refinanciamento
+        </div>
+        <div className="mt-10 flex items-center justify-center">
+          <a href="https://api.whatsapp.com/send?phone=5551992711960&text=Olá Cris!, gostaria de falar sobre refinanciamento/financiamento" target="_blank">
+            <Image src={refinanciamento} width={450} alt="Refinanciamento" />
+          </a>
+        </div>
+      </div>
       <hr />
       <div className="my-10">
         <div className="text-white text-center text-2xl my-6" id="neoProtege">
