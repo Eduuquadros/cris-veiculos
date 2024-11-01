@@ -2,6 +2,8 @@ import Image from "next/image";
 import Fachada from "./fachada.jpg";
 import logoNeo from "../Header/logoNeo.png";
 import refinanciamento from "./refinanciamento.jpeg";
+import mobiauto from "./mobiauto.jpeg";
+import mobisite from "./mobisite.png";
 
 export default function Footer() {
   return (
@@ -12,9 +14,39 @@ export default function Footer() {
           Refinanciamento
         </div>
         <div className="mt-10 flex items-center justify-center">
-          <a href="https://api.whatsapp.com/send?phone=5551992711960&text=Olá Cris!, gostaria de falar sobre refinanciamento/financiamento" target="_blank">
+          <a
+            href="https://api.whatsapp.com/send?phone=5551992711960&text=Olá Cris!, gostaria de falar sobre refinanciamento/financiamento"
+            target="_blank"
+          >
             <Image src={refinanciamento} width={450} alt="Refinanciamento" />
           </a>
+        </div>
+      </div>
+      <hr />
+      <div className="my-10">
+        <div className="text-white text-center text-2xl my-6" id="neoProtege">
+          Feirão mobiauto
+        </div>
+        <div className="mt-10 lg:flex items-start justify-start space-x-2 space-y-2 lg:space-y-0">
+          <div>
+            <a
+              href="https://www.mobiauto.com.br/comprar/estoque/89285"
+              target="_blank"
+            >
+              <p className="text-white pb-6 underline">
+                Acesse nossa pagina no mobiauto:{" "}
+              </p>
+              <Image src={mobisite} width={1000} alt="Feirão mobiauto" />
+            </a>
+          </div>
+          <div className="flex items-center justify-center">
+            <a
+              href="https://www.mobiauto.com.br/comprar/estoque/89285"
+              target="_blank"
+            >
+              <Image src={mobiauto} width={250} alt="Feirão mobiauto" />
+            </a>
+          </div>
         </div>
       </div>
       <hr />
