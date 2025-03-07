@@ -36,15 +36,7 @@ export default function Footer() {
               <p className="text-white pb-6 underline">
                 Acesse nossa pagina no mobiauto:{" "}
               </p>
-              <Image src={mobisite} width={1000} alt="Feirão mobiauto" />
-            </a>
-          </div>
-          <div className="flex items-center justify-center">
-            <a
-              href="https://www.mobiauto.com.br/comprar/estoque/89285"
-              target="_blank"
-            >
-              <Image src={mobiauto} width={250} alt="Feirão mobiauto" />
+              <Image src={mobisite} width={1300} alt="Feirão mobiauto" />
             </a>
           </div>
         </div>
