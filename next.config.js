@@ -17,6 +17,7 @@ const nextConfig = {
         port: "",
       },
     ],
+    unoptimized: true,
   },
   async headers() {
     return [
