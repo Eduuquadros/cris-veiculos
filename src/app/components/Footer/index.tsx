@@ -36,7 +36,7 @@ export default function Footer() {
               <p className="text-white pb-6 underline">
                 Acesse nossa pagina no mobiauto:{" "}
               </p>
-              <Image src={mobisite} width={1300} alt="Feirão mobiauto" />
+              <Image src={mobisite} width={1100} alt="Feirão mobiauto" />
             </a>
           </div>
         </div>
